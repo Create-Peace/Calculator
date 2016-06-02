@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style/calc.css">
+    <title>计算器</title>
+</head>
+
+<body>
+    <div class="panel panel-success bg calc">
+        <div class="panel-heading ">
+            <h3 class="panel-title ">计算器</h3>
+        </div>
+        <div class="panel-body bg" >
+            <!-- 输出显示 -->
+            <input autofocus="autofocus" readonly="true" value="0" type="text" id="output" class="output form-control" aria-describedby="sizing-addon1">
+            <div id="keyBtn">
+            <!-- 第一行按键 -->
+            <div class="key ">
+                <button class=" btn btn-default btn-lg num " role=" button" value="7">7</button>
+                <button class=" btn btn-default btn-lg num " role=" button" value="8">8</button>
+                <button class=" btn btn-default btn-lg num " role=" button" value="9">9</button>
+                <button class=" btn btn-default btn-lg operate " role=" button" value="+">+</button>
+            </div>
+            <!-- 第二行按键 -->
+            <div class="key ">
+                <button class=" btn btn-default  btn-lg num " role=" button" value="4">4</button>
+                <button class=" btn btn-default  btn-lg num" role=" button" value="5">5</button>
+                <button class=" btn btn-default  btn-lg num" role=" button" value="6">6</button>
+                <button class=" btn btn-default  btn-lg operate" role=" button" value="-">-</button>
+            </div>
+            <!-- 第三行按键 -->
+            <div class="key">
+                <button class=" btn btn-default btn-lg num" role=" button" value="3">3</button>
+                <button class=" btn btn-default btn-lg num" role=" button" value="2">2</button>
+                <button class=" btn btn-default btn-lg num" role=" button" value="1">1</button>
+                <button class=" btn btn-default btn-lg operate" role=" button" value="*">*</button>
+            </div>
+            <!-- 第四行按键 -->
+            <div class="key">
+                <button class=" btn btn-default btn-lg num" role=" button" value="0">0</button>
+                <button class=" btn btn-default btn-lg operate" role=" button" value=".">.</button>
+                <button class=" btn btn-default btn-lg operate" role=" button" value="/">/</button>
+                <button class=" btn btn-default btn-lg sin "  role=" button" value="sin()">sin</button>
+            </div>
+            <!-- 第五行按键 清除件 -->
+            <div class="key">
+                <button class=" btn btn-default btn-lg cos "  role=" button" value="cos()">cos</button>
+                <button class=" btn btn-default btn-lg operate" role=" button" value="←">←</button>
+                <button class=" btn btn-default btn-lg operate " role=" button" value="=">=</button>
+                <button class=" btn btn-default btn-lg  operate" role=" button" value="C">C</button>
+            </div>
+            <div class="key">
+                <button class=" btn btn-default btn-lg "  role=" button" value="(">(</button>
+                <button class=" btn btn-default btn-lg " role=" button" value=")">)</button>
+                <button class=" btn btn-default btn-lg  " role=" button" value="asin()">asin</button>
+                <button class=" btn btn-default btn-lg " role=" button" value="acos()">acos</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/calc.js"></script>
+</body>
+
+</html>

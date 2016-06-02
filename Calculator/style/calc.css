@@ -1,0 +1,74 @@
+html,
+body {
+    height: 100%;
+    /* overflow:hidden; */
+}
+
+
+/* 背景 */
+
+
+.bg {
+    background: #eee;
+}
+
+
+/* 显示 */
+
+.output {
+    width: 80%;
+    height: 2em;
+    font-size: 2em;
+    text-align:right;
+    margin: 0 auto 3%;
+}
+
+
+/* 面板的最小尺寸 */
+
+.calc {
+    width: 32%;
+    margin: 100px auto;
+    min-width: 320px;
+    padding: 0;
+}
+
+
+/* 按键分布 */
+.key{
+  width: 80%;
+  margin:  auto;
+  padding: 0;
+}
+
+.btn{
+  width: 22.21%;
+  text-align:center;
+  padding: 10px 0;
+  margin-bottom: 2%;
+ font-size: 1.6em;
+}
+
+.key .btn:not(:last-child){
+  margin-right: 2%;
+}
+ .clear{
+  width: 46%;
+  margin-left: 1%;
+ }
+@media (max-width: 640px) and (min-width: 478px) {
+    .calc {
+        margin: 0 auto;
+        border-radius: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 478px) {
+    .calc {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        height: 100%;
+    }
+}
